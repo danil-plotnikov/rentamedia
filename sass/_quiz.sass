@@ -1,0 +1,389 @@
+.quiz
+ margin-bottom: 141rem
+ padding-top: 80rem
+ margin-top: -80rem
+ .block
+  &-header
+   margin-bottom: 36rem
+  &-title
+   margin-bottom: 66rem
+ &-wrap
+  display: flex
+  justify-content: center
+ &-gift
+  border-radius: 35rem
+  padding: 55rem 54rem
+  width: 469rem
+  height: 850rem
+  background: url(../img/quiz/gift-bg.jpg) center no-repeat
+  background-size: cover
+  position: relative
+  &__header
+   font-size: 30rem
+   font-weight: 700
+   line-height: 35rem
+   text-align: center
+   letter-spacing: 0.03em
+   margin-bottom: 37rem
+  &__list 
+   display: flex
+   align-items: flex-start
+   justify-content: space-between
+  &__item 
+   &-number 
+    font-weight: 500
+    font-size: 15rem
+    letter-spacing: 0.03em
+    color: #F40046
+    text-align: center
+    margin-bottom: 6rem
+   &-text 
+    font-size: 15rem
+    line-height: 21rem
+    text-align: center
+    letter-spacing: 0.01em
+    width: 163rem
+    span 
+     font-weight: 700
+  &__bottom
+   position: absolute
+   bottom: 38rem
+   width: 296rem
+   left: 50%
+   transform: translateX(-50%)
+   font-weight: 500
+   font-size: 24rem
+   line-height: 29rem
+   letter-spacing: 0.02em
+   text-align: center
+  &__employee
+   right: 58rem
+   bottom: 298rem
+   position: absolute
+   &-name 
+    font-weight: 700
+    font-size: 24rem
+    line-height: 31rem
+    margin-bottom: 9rem
+    width: 106rem
+   &-pos 
+    font-size: 13rem
+    line-height: 16rem
+    letter-spacing: 0.03em 
+    width: 75rem
+
+ &-main
+  width: 1100rem
+  background: #fff
+  min-height: 850rem
+  padding: 48rem 100rem 48rem 80rem
+  border-radius: 35rem
+  color: #000
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  position: relative
+  z-index: 1
+ &-line 
+  border-radius: 35rem
+  background: #F9F9F9
+  width: 900rem
+  margin: 0 auto 
+  padding: 7rem 9rem 
+  position: relative
+  height: 50rem
+  &__bg 
+   border-radius: 35rem
+   background: #F40046
+   height: 100%
+   background: #F40046 url(../img/quiz/line.svg) left repeat-x 
+   animation: lineScroll 10s linear infinite
+  &__text
+   position: absolute
+   top: 50%
+   left: 50%
+   transform: translate(-50%, -50%)
+   letter-spacing: 0.03em
+   font-size: 14rem
+   span 
+    font-weight: 700
+ &-question
+  display: none
+  align-content: flex-start
+  &[data-q="3"]
+   margin-top: -170rem
+  &[data-q="4"]
+   p 
+    height: auto
+  &[data-q="7"]
+   margin-top: -350rem
+  &.active 
+   display: block
+  input 
+   display: none
+   &[type="text"]
+    border: 1rem solid #E6E6E6
+    display: block
+    border-radius: 500rem
+    width: 435rem
+    height: 75rem
+    padding-left: 42rem
+    letter-spacing: 0.04em
+
+    color: #989595
+  label 
+   cursor: pointer
+   &:hover 
+    .quiz-question__check 
+     background: #F40046
+     path 
+      fill: #fff
+   &.active
+    .quiz-question__check 
+     background: #F40046
+     path 
+      fill: #fff
+  &__title 
+   text-align: center
+   font-size: 36rem
+   font-weight: 500
+   letter-spacing: 0.02em
+   margin-bottom: 78rem
+   &-2,
+   &-4 
+    margin-bottom: 57rem
+   &-5
+    margin-bottom: 40rem
+   &-6 
+    margin-bottom: 50rem
+  &__text 
+   display: flex
+   flex-wrap: wrap 
+   justify-content: space-between
+   gap: 23rem 0
+   input[type="text"]
+    margin-left: auto
+   label 
+    border-radius: 500rem
+    background: #F9F9F9
+    display: flex
+    align-items: center
+    width: 435rem
+    height: 75rem
+    padding: 22rem 23rem 23rem    
+    &.active
+     border: 1rem solid #F40046
+    p 
+     margin-left: 16rem
+     letter-spacing: 0.04em
+     font-weight: 500
+     color: #1C1C1C
+  &__check 
+   width: 30rem
+   height: 30rem
+   border-radius: 50%
+   display: flex
+   align-items: center
+   justify-content: center
+   background: #fff
+   transition: 0.4s
+   svg 
+    width: 8rem
+    path 
+     transition: 0.4s
+  &__image
+   display: flex
+   justify-content: space-between
+   label 
+    &.active
+     .quiz-question__image-wrap
+      border: 1rem solid #F40046
+     .quiz-question__check::before
+      background: #F40046
+   &-wrap
+    position: relative
+    border-radius: 35rem
+    margin-bottom: 29rem
+    height: 375rem
+    border: 1rem solid transparent
+    transition: 0.4s
+    width: 275rem
+    img 
+     width: 100%
+     height: 100%
+     object-fit: cover
+     border-radius: 35rem
+   &-check
+    position: absolute
+    bottom: 0
+    left: 50%
+    transform: translate(-50%, 50%)
+    width: 40rem
+    height: 40rem
+    background: #fff
+    &::before
+     display: block
+     transition: 0.4s
+     position: absolute
+     content: ''
+     top: 50%
+     left: 50%
+     transform: translate(-50%, -50%)
+     width: 30rem
+     height: 30rem
+     background: #F9F9F9
+     border-radius: 50%
+     z-index: -1
+   p 
+    font-size: 16rem
+    line-height: 19rem
+    color: #989595
+    letter-spacing: 0.04em
+    text-align: center
+    height: 38rem
+    display: flex
+    align-items: center
+    justify-content: center
+   &-small 
+    flex-wrap: wrap
+    gap: 20rem 0
+    .quiz-question__image-wrap 
+     height: 185rem
+  &__bg 
+   img 
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: -1
+   input 
+    margin: 0 auto
+
+    
+ &-footer
+  display: flex
+  justify-content: space-between
+  &__hint 
+   display: flex
+   align-items: center
+   img 
+    width: 40rem
+    margin-right: 21rem
+   p 
+    letter-spacing: 0.03em
+    color: #1C1C1C
+    line-height: 21rem
+    font-size: 15rem
+    width: 201rem 
+    span 
+     font-weight: 700
+ &-buttons
+  display: flex
+  align-items: center
+  gap: 0 23rem 
+  
+ &-btn 
+  border-radius: 500rem
+  width: 200rem
+  font-weight: 500
+  text-transform: uppercase
+  letter-spacing: 0.1em
+  height: 75rem
+  &__next 
+   color: #fff
+   background: #F40046
+   transition: 0.4s
+   &:hover 
+    background: #E10544
+   &:disabled
+    cursor: not-allowed
+    background: #f8386f
+  &__prev 
+   background: #F3F1F2
+   color: #A8A8A8
+   display: none
+
+ &-load
+  width: 100%
+  height: 850rem
+  display: none
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  &.active
+   display: flex
+  &__bar 
+   display: flex
+   gap: 0 5rem
+   justify-content: center
+   margin-bottom: 37rem
+   span 
+    background: #F40046
+    opacity: 0
+    width: 5.5rem
+    height: 24rem
+    animation: loadBar 2s infinite
+   @for $i from 1 through 17
+    span
+     &:nth-child(#{$i})
+      animation-delay: (0s + $i * 0.1)
+
+  p 
+   letter-spacing: 1em
+   text-transform: uppercase 
+   color: #FFFFFF
+ &-result
+  border-radius: 35rem
+  width: 100%
+  height: 850rem
+  padding: 124rem 209rem
+  background: url(../img/quiz/result-bg.jpg) center no-repeat
+  background-size: cover
+  position: relative
+  display: none
+  &__phone 
+   position: absolute
+   bottom: 0
+   right: 0
+   width: 821rem
+  &__wrap
+   width: 470rem
+  &__title
+   font-size: 40rem
+   font-weight: 500
+   letter-spacing: 0.03em
+   text-align: center
+   margin-bottom: 47rem
+   line-height: 47rem
+  &__form
+   width: 356rem
+   margin: 0 auto
+   .select
+    height: 75rem
+    margin-bottom: 27rem
+   .phone
+    height: 75rem
+    margin-bottom: 27rem
+   .btn 
+    height: 100rem
+    width: 356rem
+    margin-bottom: 22rem
+    p 
+     width: 191rem
+     margin-right: 27rem
+     letter-spacing: 0.02em
+     line-height: 23rem
+
+
+   
+@keyframes loadBar
+ 0%
+  opacity: 0
+ 100%
+  opacity: 1
+    
+@keyframes lineScroll
+ 0%
+  background-position: 0 0
+ 100%
+  background-position: 100% 0

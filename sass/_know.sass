@@ -1,0 +1,286 @@
+.know
+ margin-bottom: 144rem
+ position: relative
+ z-index: -1
+ &-bg 
+  position: absolute
+  width: 100%
+  left: 0
+  bottom: 29rem
+  z-index: -1
+ .block
+  &-header
+   width: 1300rem
+   margin-bottom: 45rem
+  &-title
+   margin-bottom: 216rem
+ &-advantages 
+  height: 390rem
+  position: relative
+  margin-bottom: 366rem
+  &__plus
+   position: absolute
+   width: 27rem
+   height: 27rem
+   display: flex
+   align-items: center
+   justify-content: center
+   border-radius: 50%
+   background: #F40046
+   cursor: pointer
+   &:hover
+    .know-more
+     display: block
+   &::before
+    content: ''
+    display: block
+    position: absolute
+    top: 50%
+    left: 50%
+    background: #F40046
+    border-radius: 50%
+    transform: translate(-50%, -50%)
+    animation: round-big 3s infinite
+    width: 100%
+    z-index: -1
+    height: 100%
+   p 
+    font-size: 12rem
+    font-weight: 700
+   &-1 
+    top: 0
+    left: 169rem
+   &-2 
+    top: 330rem
+    left: 237rem
+   &-3
+    top: 138rem
+    left: 430rem
+   &-4 
+    top: 363rem
+    left: 760rem
+   &-5
+    top: 117rem
+    left: 938rem
+   &-6
+    top: 229rem
+    left: 1161rem
+  &__hint 
+   position: absolute
+   top: 50%
+   transform: translateY(-50%)
+   letter-spacing: 0.02em
+   font-weight: 500
+   font-size: 18rem
+   line-height: 24rem
+   left: calc( 100% + 24rem )
+   width: 130rem
+ &-more
+  filter: drop-shadow(0rem 0rem 100rem rgba(255, 255, 255, 0.25))
+  border-radius: 35rem
+  overflow: hidden 
+  padding: 46rem 57rem 48rem 48rem
+  position: absolute
+  z-index: 1
+  width: 700rem
+  height: 450rem
+  display: none
+  &__bg
+   position: absolute
+   top: 0
+   z-index: -1
+   left: 0
+   width: 100%
+   height: 100%
+   object-fit: cover
+  &__top
+   display: flex
+   align-items: center
+   justify-content: space-between
+  &__title
+   font-size: 25rem 
+   font-weight: 500
+   line-height: 30rem
+   letter-spacing: 0.02em
+  &__price 
+   &-new 
+    font-size: 16rem
+    font-weight: 700
+    margin-bottom: 7rem
+    text-align: center
+    span 
+     font-size: 32rem
+   &-old 
+    text-align: center
+    color: rgba(255, 255, 255, 0.5)
+    text-decoration-line: line-through
+    letter-spacing: 0.02em
+    font-size: 14rem
+  &__text 
+   font-size: 14rem
+   line-height: 19rem
+   max-width: 346rem 
+   max-height: 300rem
+   // overflow-y: hidden
+   .mCustomScrollBox
+    left: -20rem
+    padding-left: 20rem
+   .mCSB_scrollTools
+    right: auto
+    left: 0
+   .mCSB_draggerContainer
+    border-radius: 500rem
+    width: 5rem
+    background: #333333
+   .mCSB_draggerRail
+    background: transparent
+    
+    
+   .mCSB_dragger .mCSB_dragger_bar
+    background: #F40046
+    border-radius: 500rem
+    width: 100%
+   p 
+    font-size: 14rem
+    line-height: 19rem
+    font-weight: 400
+    margin-bottom: 10rem
+   ul
+     margin-bottom: 10rem
+     li
+      padding-left: 22rem
+      position: relative
+      &::before
+       content: ''
+       display: block
+       position: absolute
+       background: #fff
+       top: 12rem
+       left: 5rem
+       width: 3rem
+       height: 3rem
+       border-radius: 50%
+  &__footer
+   position: absolute
+   bottom: 48rem
+   right: 57rem
+  &__get 
+   display: flex
+   align-items: center
+   margin-bottom: 30rem
+   justify-content: center
+   p 
+    border-bottom: 1rem dotted #F40046
+    padding-bottom: 5rem
+    margin-right: 9rem
+   img 
+    width: 13rem
+  &__btn
+   width: 223rem
+   height: 62rem
+   font-size: 12rem
+   letter-spacing: 0.05em
+   font-weight: 700
+   text-transform: uppercase
+   img 
+    margin-left: 9rem
+    width: 13rem
+ &-bottom
+  margin-left: 164rem
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+  width: 1950rem
+  position: relative
+  &__title
+   font-weight: 500
+   font-size: 36rem
+   line-height: 50rem
+   letter-spacing: 0.02em
+   width: 280rem
+   margin-bottom: 79rem
+  &__arrows
+   display: flex
+   align-items: center
+   gap: 0 24rem
+  &__arrow
+   cursor: pointer
+   &:hover 
+    path 
+     fill: #F40046
+   svg 
+    width: 29rem
+    path 
+     transition: 0.4s
+   &-prev 
+    transform: scaleX(-1)
+  &__slider 
+   width: 1550rem
+   position: static
+   .owl-stage-outer,
+   .owl-stage
+    position: static
+   .owl-dots 
+    position: absolute
+    bottom: 0
+    left: 0
+  &__block
+   position: relative
+   border-radius: 30rem
+   overflow: hidden
+   width: 350rem
+   height: 350rem
+   z-index: 1
+   padding: 44rem 53rem 45rem 54rem
+   display: flex
+   flex-direction: column
+   justify-content: space-between
+   background: #161A1D
+   &:hover 
+    .know-bottom__block
+     &-text
+      top: 100%
+      left: 100%
+      opacity: 0
+     &-img 
+      width: 105%
+      height: 105%
+      opacity: 0.75
+   &-img 
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    object-fit: cover
+    border-radius: 30rem
+    z-index: -1
+    transition: 0.4s
+    &-1
+     opacity: 0.4
+    &-2
+     opacity: 0.25
+    &-3
+     opacity: 0.35
+    &-4,
+    &-6,
+    &-7
+     opacity: 0.3
+   &-text 
+    font-size: 24rem
+    font-weight: 500
+    line-height: 29rem
+    letter-spacing: 0.02em
+    transition: 0.4s
+    position: relative
+    width: 200rem
+    top: 0
+    left: 0
+    opacity: 1
+   &-number 
+    font-weight: 700
+    font-size: 12rem
+    letter-spacing: 0.1em
+    text-transform: uppercase
+    align-self: flex-end
+  

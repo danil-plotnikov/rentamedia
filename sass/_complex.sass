@@ -1,0 +1,111 @@
+.complex
+ margin-bottom: 97rem
+ padding-top: 80rem
+ margin-top: -80rem
+ .block
+  &-header
+   margin-bottom: 45rem
+   width: 1320rem
+  &-title
+   margin-bottom: 78rem
+ &-main
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+ &-block
+  background: #22292D
+  border-radius: 30rem
+  width: 480rem
+  height: 480rem
+  padding: 57rem 43rem 41rem 77rem
+  display: flex
+  flex-direction: column
+  justify-content: space-between 
+  position: relative
+  overflow: hidden
+  z-index: 1
+  &:hover 
+   .complex
+    &-bg
+     opacity: 1
+    &-bottom
+     &__arrow
+      transform: scale(1.23)
+   ul
+    opacity: 1
+ &-bg 
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  object-fit: cover
+  z-index: -1
+  opacity: 0
+  transition: 0.4s
+ &-text 
+  font-weight: 500
+  font-size: 30rem
+  line-height: 40rem
+  span 
+   color: #F40046
+ ul 
+  opacity: 0
+  transition: 0.4s
+  margin: 0
+  li 
+   font-weight: 500
+   line-height: 28rem
+   padding-left: 25rem
+   position: relative
+   &::before
+    display: block
+    content: ''
+    position: absolute
+    top: 50%
+    left: 12rem
+    transform: translateY(-50%)
+    border-radius: 50%
+    width: 3rem
+    height: 3rem
+    background: #fff
+ &-list 
+  display: flex
+  justify-content: space-between
+  &-2 
+   width: 305rem
+  &-3 
+   width: 360rem
+   ul
+    &:nth-child(1)
+     width: 202rem
+    &:nth-child(2)
+     width: 153rem
+    li 
+     font-size: 15rem 
+     padding-left: 23rem
+     line-height: 20rem
+     margin-bottom: 5rem
+     &::before
+      transform: none 
+      top: 17rem
+ &-bottom
+  display: flex
+  align-items: center
+  justify-content: space-between
+  &__number 
+   text-transform: uppercase
+   font-size: 14rem
+   font-weight: 700
+   letter-spacing: 0.1em
+  &__arrow
+   background: #F40046
+   width: 65rem
+   height: 65rem
+   border-radius: 50%
+   display: flex
+   align-items: center
+   justify-content: center
+   transition: 0.4s
+   img 
+    width: 14rem

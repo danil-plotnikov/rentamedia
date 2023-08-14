@@ -1,0 +1,99 @@
+.main
+ position: relative
+ margin-bottom: 179rem
+ &-bg 
+  position: absolute
+  top: 0
+  left: 0
+  width: 1920rem
+  z-index: -1
+ h1 
+  font-size: 65rem
+  font-weight: 500
+  line-height: 85rem
+  letter-spacing: 0.02em;
+  width: 870rem
+  margin-bottom: 51rem
+  span 
+   color: #F40046;
+ &-title
+  margin-bottom: 64rem
+  display: flex
+  align-items: flex-start
+  &__dots 
+   display: flex
+   margin-top: 21rem
+   align-items: center
+   gap: 0 7rem
+   margin-right: 18rem
+   span 
+    border: 2rem solid #F40046;
+    width: 9rem
+    height: 9rem
+    border-radius: 50%
+    animation: main-dots 1s linear infinite
+    &:nth-child(1)
+     animation-delay: 0.2s
+    &:nth-child(2)
+     animation-delay: 0.4s
+    &:nth-child(3)
+     animation-delay: 0.6s
+    &:nth-child(4)
+     animation-delay: 0.8s
+  p 
+   font-size: 36rem
+   font-weight: 300
+   line-height: 50rem
+   letter-spacing: 0.01em
+   width: 780rem
+   span 
+    font-weight: 500
+ &-list 
+  display: flex
+  align-items: center
+  gap: 0 113rem
+  margin-bottom: 51rem
+ &-item 
+  display: flex
+  align-items: center
+  &__check 
+   border: 1rem solid rgba(255, 255, 255, 0.2)
+   border-radius: 50%
+   width: 65rem
+   height: 65rem
+   display: flex
+   align-items: center
+   justify-content: center
+   margin-right: 22rem
+   img 
+    width: 18rem
+  p 
+   font-size: 20rem
+   line-height: 29rem
+   span 
+    font-weight: 700
+ &-btn  
+  width: 400rem
+  height: 110rem
+  &:hover 
+   p 
+    margin-right: 16rem
+  p 
+   text-transform: uppercase
+   letter-spacing: 0.05em;
+   margin-right: 24rem
+   transition: 0.4s
+  img 
+   width: 22rem
+
+  
+
+
+@keyframes main-dots
+ 0%
+  opacity: 1
+ 50%
+  opacity: 0
+ 100%
+  opacity: 1
+  

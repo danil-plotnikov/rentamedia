@@ -1,0 +1,185 @@
+.case
+ position: relative
+ margin-bottom: 119rem
+ padding-top: 80rem
+ margin-top: -80rem
+ .block
+  &-header
+   margin-bottom: 39rem
+  &-title 
+   margin-bottom: 60rem
+ &-btn 
+  border: 1rem solid #474747
+  border-radius: 500rem
+  font-size: 18rem
+  line-height: 21rem
+  color: #696969
+  text-align: center
+  width: 300rem
+  height: 85rem
+  transition: 0.4s
+  padding: 0 25rem
+  &:hover 
+   border: 1rem solid #F40046
+   color: #F40046
+  &.active
+   background: #F40046
+   border: 1rem solid #F40046
+   color: #FFFFFF
+  &__wrap
+   display: flex
+   align-items: center
+   justify-content: center
+   gap: 0 25rem
+   margin-bottom: 60rem
+ &-slider
+  margin-bottom: 48rem
+  position: static
+  position: absolute
+  top: 0
+  left: 0
+  z-index: -1
+  opacity: 0
+  &.active
+   position: static
+   z-index: 1
+   opacity: 1
+  .owl-stage-outer,
+  .owl-stage
+   position: static
+  .owl-item 
+   img 
+    width: auto
+  .owl-dots 
+   position: absolute
+   bottom: 15rem
+   left: 0rem
+   gap: 0 25rem
+  .owl-item
+   img 
+    width: auto
+ &-block
+  width: 751rem
+  &__big 
+   position: relative
+   margin-bottom: 23rem
+   &-date
+    position: absolute
+    bottom: 39rem
+    display: flex
+    align-items: center
+    justify-content: center
+    left: 43rem
+    border-radius: 500rem
+    color: #191E21
+    font-size: 13rem
+    font-weight: 500
+    text-align: center
+    width: 200rem
+    height: 50rem
+    background: rgba(255, 255, 255, 0.85)
+   img
+    width: 100%
+    height: 600rem
+    object-fit: cover
+    border-radius: 35rem
+    cursor: pointer
+  &__images
+   display: flex
+   justify-content: space-between
+   width: 100%
+   margin-bottom: 33rem
+   img 
+    width: 135rem
+    border-radius: 15rem
+    height: 100rem
+    cursor: pointer
+  &__video 
+   position: relative
+   cursor: pointer
+   &::before
+    display: block
+    position: absolute
+    content: ''
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    border-radius: 15rem
+    background: rgba(0, 0, 0, 0.5)
+   &-play 
+    background: #F40046
+    border-radius: 50%
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 27rem
+    height: 27rem
+    display: flex
+    align-items: center
+    justify-content: center
+    z-index: 1
+    img 
+     width: 4rem
+     height: 4rem
+    &::before
+     display: block
+     position: absolute
+     width: 100%
+     height: 100%
+     content: ''
+     border-radius: 50%
+     background: #F40046
+     top: 50%
+     left: 50%
+     transform: translate(-50%, -50%)
+     animation: round 3s infinite
+     z-index: -1
+  &__descr
+   display: flex
+   justify-content: space-between
+   width: 100%
+   &-title
+    font-weight: 500
+    font-size: 32rem
+    line-height: 38rem
+    width: 300rem
+   ul 
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap-reverse
+    height: 104rem
+    margin-top: 6rem
+    gap: 0 55rem
+    li
+     line-height: 26rem
+     font-size: 15rem
+     position: relative
+     &::before
+      position: absolute
+      display: block
+      content: ''
+      width: 3rem
+      height: 3rem
+      background: #FFFFFF;
+      border-radius: 50%
+      top: 50%
+      transform: translateY(-50%)
+      left: -14rem
+ &-arrows
+  display: flex
+  width: 100%
+  justify-content: flex-end
+  gap: 0 24rem 
+ &-arrow 
+  &__prev 
+   transform: scaleX(-1) 
+  svg 
+   width: 16rem
+   cursor: pointer
+   path 
+    transition: 0.4s 
+   &:hover
+    path 
+     fill: #F40046

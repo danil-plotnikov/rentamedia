@@ -1,0 +1,132 @@
+.header
+ display: flex
+ align-items: center
+ justify-content: space-between
+ padding-top: 23rem
+ padding-bottom: 167rem
+ &-logo
+  width: 300rem
+ &-calc
+  display: flex
+  align-items: center
+  cursor: pointer
+  &__icon
+   width: 50rem
+   height: 50rem
+   border-radius: 50%
+   display: flex
+   align-items: center
+   justify-content: center
+   background: #fff 
+   margin-right: 17rem
+   transition: 0.4s
+   svg 
+    width: 20rem
+    path 
+     transition: 0.4s
+  &__text 
+   line-height: 19rem
+   letter-spacing: 0.03em
+   max-width: 106rem 
+  &:hover 
+   .header-calc__icon 
+    background: #F40046
+    svg 
+     path 
+      fill: #fff
+   span
+    &::after 
+     width: 60%
+ &-question
+  display: flex
+  align-items: center
+  &__man
+   background: #EEEEEE
+   border-radius: 50%
+   width: 65rem
+   height: 65rem
+   margin-right: 24rem
+   img 
+    width: 100%
+  p  
+   font-size: 14rem
+   line-height: 19rem
+   letter-spacing: 0.03em
+   width: 115rem
+   margin-right: 23rem
+   span 
+    font-weight: 700
+ &-messenger
+  display: flex
+  align-items: center
+  gap: 0 10rem
+  a 
+   width: 50rem
+   height: 50rem
+   img 
+    width: 22rem
+  p 
+   margin-left: 8rem
+   font-size: 10rem
+   font-weight: 600
+   letter-spacing: 0.03em 
+   width: 0
+   img 
+    width: 22rem
+ &-call 
+  text-align: center
+  &__top 
+   font-size: 13rem
+   line-height: 15rem
+   letter-spacing: 0.03em
+   position: relative
+   margin-bottom: 10rem
+   .light
+    left: 16rem
+  a 
+   font-size: 21rem
+   line-height: 25rem
+   letter-spacing: 0.02em
+   font-weight: 700
+   margin-bottom: 5rem
+   transition: 0.4s
+   display: block
+   &:hover 
+    color: #F40046
+  &__request
+   font-size: 14rem
+   line-height: 17rem
+   letter-spacing: 0.05em
+   font-weight: 500
+   width: 120rem
+   margin: 0 auto
+ &-burger
+  display: none
+
+.nav 
+ position: absolute
+ top: 141rem
+ left: 50%
+ transform: translateX(-50%)
+ width: 100%
+ .container
+  display: flex
+  align-items: center
+  justify-content: space-between 
+ &.fixed 
+  position: fixed
+  top: 0
+  z-index: 20
+  padding: 30rem 0
+  background: #000000bb
+ a 
+  font-weight: 700
+  letter-spacing: 0.2em
+  text-transform: uppercase
+  transition: 0.4s
+  position: relative
+  z-index: 2
+  &:hover 
+   color: #F40046
+   transform: scale(1.05)
+

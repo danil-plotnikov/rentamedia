@@ -1,0 +1,182 @@
+.team
+ z-index: 2
+ position: relative
+ margin-bottom: 146rem
+ .block
+  &-header
+   width: 1330rem
+   margin-bottom: 29rem
+  &-title
+   margin-bottom: 44rem
+ &-wrap
+  display: flex
+  justify-content: space-between
+ &-main
+  width: 1164rem
+  margin-top: 25rem
+ &-text 
+  display: flex
+  align-items: center
+  margin-bottom: 46rem
+  p 
+   letter-spacing: 0.02em
+   margin-right: 69rem
+   transition: 0.4s
+   cursor: pointer
+   &.active
+    color: #F40046
+    font-size: 18rem
+    font-weight: 500;
+   &:hover 
+    font-size: 18rem
+   
+ &-slider
+  margin-bottom: 36rem
+  position: static
+  position: absolute
+  opacity: 0
+  z-index: -1
+  width: 1164rem
+  &.active
+   opacity: 1
+   position: static
+   z-index: 1
+  .owl-stage-outer,
+  .owl-stage
+   position: static
+  .owl-dots
+   position: absolute
+   bottom: 15rem 
+   left: 0
+  &__block
+   height: 500rem
+   border-radius: 25rem
+   position: relative
+   overflow: hidden
+   z-index: 1
+   display: flex
+   justify-content: flex-start
+   align-items: flex-end
+   padding: 31rem 
+   &:hover 
+    &::after
+     opacity: 1
+    .team-slider__block
+     &-descr
+      bottom: 42rem
+     &-arrow
+      width: 56rem
+      height: 56rem
+   &::after
+    display: block
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: -1
+    background: linear-gradient(180deg, rgba(28, 28, 28, 0) 0%, rgba(28, 28, 28, 0.7) 100%)
+    opacity: 0
+    transition: 0.4s
+   &-img 
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: -2
+    object-fit: cover
+   &-arrow
+    background: #F40046
+    width: 50rem
+    height: 50rem
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    transition: 0.4s
+    img 
+     width: 11rem !important
+   &-descr
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    bottom: -100rem
+    width: 140rem
+    transition: 0.4s
+   &-name 
+    font-weight: 700
+    font-size: 24rem
+    line-height: 28rem
+   &-pos 
+    font-size: 13rem
+    font-weight: 300
+    line-height: 25rem
+ &-arrows
+  justify-content: flex-end
+  .clients-arrow
+   &:nth-child(1)
+    transform: scaleX(-1)
+ &-reviews
+  width: 350rem
+  position: relative
+  &__text
+   text-align: center
+   letter-spacing: 0.02em
+   font-size: 24rem
+   line-height: 28rem
+   margin-bottom: 32rem
+  &__slider
+   margin-bottom: 36rem
+   position: static
+   .owl-stage-outer,
+   .owl-stage
+    position: static
+   .owl-dots
+    position: absolute
+    bottom: 15rem 
+    left: 0
+  &__block
+   width: 350rem
+   height: 500rem
+   border-radius: 25rem
+   overflow: hidden
+   position: relative
+   display: flex
+   align-items: center
+   cursor: pointer 
+   justify-content: center
+  &__img 
+   position: absolute
+   top: 0
+   left: 0
+   width: 100%
+   height: 100%
+   object-fit: cover
+  &__play 
+   background: #F40046
+   border-radius: 50%
+   width: 90rem
+   height: 90rem
+   z-index: 1
+   position: relative
+   display: flex
+   align-items: center
+   justify-content: center
+   img 
+    width: 13rem !important
+   &::before
+    display: block
+    position: absolute
+    width: 100%
+    height: 100%
+    content: ''
+    border-radius: 50%
+    background: #F40046
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    animation: round 3s infinite
+    z-index: -1
+    
